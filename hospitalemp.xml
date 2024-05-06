@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <!-- Administrators -->
+    <employee>
+        <emp_id>1001</emp_id>
+        <firstname>James</firstname>
+        <m_initial>A</m_initial>
+        <lastname>Wilson</lastname>
+        <position>Full Time</position>
+        <title>Administrator</title>
+    </employee>
+    <employee>
+        <emp_id>1002</emp_id>
+        <firstname>Lisa</firstname>
+        <m_initial>B</m_initial>
+        <lastname>Johnson</lastname>
+        <position>Part Time</position>
+        <title>Administrator</title>
+    </employee>
+    <!-- Managers -->
+    <employee>
+        <emp_id>1003</emp_id>
+        <firstname>Robert</firstname>
+        <m_initial>C</m_initial>
+        <lastname>Smith</lastname>
+        <position>Agency</position>
+        <title>Manager</title>
+    </employee>
+    <employee>
+        <emp_id>1004</emp_id>
+        <firstname>Mary</firstname>
+        <m_initial>D</m_initial>
+        <lastname>Brown</lastname>
+        <position>Full Time</position>
+        <title>Manager</title>
+    </employee>
+    <employee>
+        <emp_id>1005</emp_id>
+        <firstname>Patricia</firstname>
+        <m_initial>E</m_initial>
+        <lastname>Garcia</lastname>
+        <position>Part Time</position>
+        <title>Manager</title>
+    </employee>
+    <employee>
+        <emp_id>1006</emp_id>
+        <firstname>David</firstname>
+        <m_initial>F</m_initial>
+        <lastname>Martinez</lastname>
+        <position>Agency</position>
+        <title>Manager</title>
+    </employee>
+    <!-- Nurses and Caregivers -->
+    <employee>
+        <emp_id>1007</emp_id>
+        <firstname>Michael</firstname>
+        <m_initial>G</m_initial>
+        <lastname>Hernandez</lastname>
+        <position>Full Time</position>
+        <title>RN</title>
+    </employee>
+    <employee>
+        <emp_id>1008</emp_id>
+        <firstname>Elizabeth</firstname>
+        <m_initial>H</m_initial>
+        <lastname>Clark</lastname>
+        <position>Part Time</position>
+        <title>LPN</title>
+    </employee>
+    <!-- Caregivers Group 1 -->
+    <employee>
+        <emp_id>1009</emp_id>
+        <firstname>William</firstname>
+        <m_initial>I</m_initial>
+        <lastname>Rodriguez</lastname>
+        <position>Agency</position>
+        <title>CG</title>
+    </employee>
+    <employee>
+        <emp_id>1010</emp_id>
+        <firstname>Barbara</firstname>
+        <m_initial>J</m_initial>
+        <lastname>Lewis</lastname>
+        <position>Full Time</position>
+        <title>CG</title>
+    </employee>
+    <employee>
+        <emp_id>1011</emp_id>
+        <firstname>Susan</firstname>
+        <m_initial>K</m_initial>
+        <lastname>Lee</lastname>
+        <position>Part Time</position>
+        <title>CG</title>
+    </employee>
+    <!-- Nurses for Group 1 -->
+    <employee>
+        <emp_id>1012</emp_id>
+        <firstname>Richard</firstname>
+        <m_initial>L</m_initial>
+        <lastname>Walker</lastname>
+        <position>Agency</position>
+        <title>LPN</title>
+    </employee>
+    <employee>
+        <emp_id>1013</emp_id>
+        <firstname>Joseph</firstname>
+        <m_initial>M</m_initial>
+        <lastname>Hall</lastname>
+        <position>Full Time</position>
+        <title>RN</title>
+    </employee>
+    <!-- Caregivers Group 2 -->
+    <employee>
+        <emp_id>1014</emp_id>
+        <firstname>Thomas</firstname>
+        <m_initial>N</m_initial>
+        <lastname>Allen</lastname>
+        <position>Part Time</position>
+        <title>CG</title>
+    </employee>
+    <employee>
+        <emp_id>1015</emp_id>
+        <firstname>Margaret</firstname>
+        <m_initial>O</m_initial>
+        <lastname>Young</lastname>
+        <position>Agency</position>
+        <title>CG</title>
+    </employee>
+    <employee>
+        <emp_id>1016</emp_id>
+        <firstname>Charles</firstname>
+        <m_initial>P</m_initial>
+        <lastname>Hernandez</lastname>
+        <position>Full Time</position>
+        <title>CG</title>
+    </employee>
+    <!-- Nurse for Group 2 -->
+    <employee>
+        <emp_id>1017</emp_id>
+        <firstname>Jennifer</firstname>
+        <m_initial>Q</m_initial>
+        <lastname>King</lastname>
+        <position>Part Time</position>
+        <title>LPN</title>
+    </employee>
+</employees>

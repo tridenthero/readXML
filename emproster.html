@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HOSPITAL SCHEDULE APP - ROSTER</title>
+</head>
+<style>
+	table {
+  	border-collapse: collapse;
+    width: 100%;
+  }
+ 
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+	
+	th {
+    background-color: green;
+    color: white;
+  }
+	
+	tr:nth-child(even) {
+    background-color: lightgreen
+  }
+</style>
+
+<body>
+	<h1>HOSPITAL SCHEDULE APP - ROSTER</h1>
+	
+	<br />
+	<!--
+	<button type="button" onclick="loadXml()">LOAD XML</button>
+	-->
+	<table id="result"></table>
+	
+	<script>
+		//document.getElementById("result").innerHTML = "test";
+		
+		let xmlPath = "hospitalemp.xml";
+		
+		window.onload = function(){
+			loadXml();
+		}
+		
+		function loadXml() {
+			var xmlhttp = new XMLHttpRequest();
+  		xmlhttp.onreadystatechange = function() {
+    		if (this.readyState == 4 && this.status == 200) {
+      		displayXML(this);
+    		} 
+  		};
+		
+  		xmlhttp.open("GET", xmlPath, true);
+  		xmlhttp.send();
+		}
+		
+		function displayXML(xml){
+			var x, i, xmlDoc, txt;
+			
+  		xmlDoc = xml.responseXML;
+  		txt = "<tr><th>FIRST NAME</th><th>M INITIAL</th><th>LAST NAME</th><th>POSITION</th><th>TITLE</th></tr>";
+			
+  		x = 
+			xmlDoc.getElementsByTagName("employee");
+			
+  		for (i = 0; i< x.length; i++) {
+    		txt += "<tr><td>" + x[i]
+				.getElementsByTagName("firstname")[0]
+        .childNodes[0]
+				.nodeValue + "</td>";
+				
+				txt += "<td>" + x[i]
+				.getElementsByTagName("m_initial")[0]
+        .childNodes[0]
+				.nodeValue + "</td>";
+				
+				txt += "<td>" + x[i]
+				.getElementsByTagName("lastname")[0]
+        .childNodes[0]
+				.nodeValue + "</td>";
+				
+				txt += "<td>" + x[i]
+				.getElementsByTagName("position")[0]
+        .childNodes[0]
+				.nodeValue + "</td>";
+				
+				txt += "<td>" + x[i]
+				.getElementsByTagName("title")[0]
+        .childNodes[0]
+				.nodeValue + "</td></tr>";
+  		}
+			
+  		document.getElementById("result")
+			.innerHTML = txt;
+		}
+		
+		
+	</script>
+</body>
+</html>
